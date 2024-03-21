@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script defer src="./URLEncodeDecode.js"></script>
+  <title>URLEncodeDecode</title>
+  
+
+</head>
+<body>
+  <div class="non-footer">
+  <header class="navbar">
+      <div class="dropdown-nav"><img id="hamburger" style="margin-top: 14px;" src ="Images/menu-24px.svg">
+        <a href="https://string-util.netlify.app" target="_blank">String Utilities</a>
+        <a href="https://unit-converter-gvsn.netlify.app" target="_blank" >Unit Converter</a>
+        <a href="https://number-base-converet.netlify.app" target="_blank">Base Converter</a>
+        <a href="https://time-converter-gvsn.netlify.app/" target="_blank">Time Converter</a>
+        <a href="https://colou-util.netlify.app" target="_blank">Color Converter</a>
+        
+        </div>
+        </div>
+      <div class="dropdown-nav">Encoder/Decoder <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="dropdown-content">
+        <a href="./index.html">Base64 Encode</a>
+        <a href="./Base64Decode.html">Base64 Decode</a>
+        <a href="#">URL Encode Decode</a>
+        <a href="./MD5HashGenerator.html">MD5 Hash Generator</a>
+        <a href="./SHA1HashGenerator.html">SHA-1 Hash Generator</a>
+        <a href="./SHA256HashGenerator.html">SHA-256 Hash Generator</a>
+        <a href="./SHA512HashGenerator.html">SHA-512 Hash Generator</a>
+      </div>
+      </div>
+             
+      <div class="util" ><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://util-app-dashboard.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+    
+  </header>
+  <main>
+    
+    <h2 style="text-align: center;">URL Encode/Decode</h2>
+    <div class="input-output">
+      <div>
+    <textarea  type="text" id="input" placeholder="Enter input"  rows="15" cols="60"></textarea>
+      </div>
+    <div style="margin-top:20px;margin-bottom:20px;">
+      <input type="button" id="encode-button" value= "Encode">
+      <input style="margin-left:20px;margin-right:20px;" type="button" id="decode-button" value= "Decode">
+      <input type="button" id="reset-button" value= "Reset">
+    </div>
+    <div>
+    <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>
+   </div>
+    
+    </div>
+
+    <!--
+      <div class="input-output">
+      <div>
+        <textarea  type="text" id="input" placeholder="Enter input" rows="15" cols="60"></textarea>
+        </div>
+        <div style="margin-top:20px;margin-bottom:20px;">
+          <input type="button" id="generate-button" value= "Generate">
+          <input type="button" id="reset-button" value= "Reset">
+          </div>
+        <div>
+        <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>  
+      </div>
+</div>
+    -->
+  </main>
+  <section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is URL encoding/decoding?</h3>
+    <p>URL encoding stands for encoding certain characters in a URL by replacing them with one or more character 
+      triplets that consist of the percent character "%" followed by two hexadecimal digits. 
+      The two hexadecimal digits of the triplet(s) represent the numeric value of the replaced character.</p>
+     <p>RFC 3986 does not define according to which character encoding table non-ASCII characters 
+       (e.g. the umlauts ä, ö, ü) should be encoded. As URL encoding involves a pair of hexadecimal digits 
+       and as a pair of hexadecimal digits is equivalent to 8 bits, it would theoretically be possible to 
+       use one of the 8-bit code pages for non-ASCII characters (e.g. ISO-8859-1 for umlauts).</p>
+     <p>On the other hand, as many languages have their own 8-bit code page, handling all these different 8-bit 
+       code pages would be a quite cumbersome thing to do. Some languages do not even fit into an 
+       8-bit code page (e.g. Chinese). Therefore, RFC 3629 proposes to use the UTF-8 character encoding 
+       table for non-ASCII characters.</p>
+     <p>You can check out more about it 
+       <a style="color:#388bfd;" href ="https://en.wikipedia.org/wiki/Percent-encoding" target="_blank">here.</a></p>
+      </div>     
+    </section>
+  </div>
+  
+  <div class="footer-wrapper">
+  <footer style="background-color:#24292e;">
+    <div class="footer-info" style="text-align: center;color:white;">
+      <p style="padding-top: 10px;">Check out my profiles here:</p>
+       <div class="footer-logo" >
+         <a href="https://www.linkedin.com/in/gvsn138/" target="_blank"><img src="Images/linkedin.svg"></a>
+         <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/gvsn138" target="_blank"><img src="Images/github.svg"></a>
+         <a href="https://twitter.com/gvsn138" target="_blank"><img src="Images/twitter.svg"></a>
+        </div>
+    </div>
+  </footer>
+  </div>
+
+</body>
+</html>

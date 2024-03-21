@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script defer src="./SHA256HashGenerator.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <title>SHA-256 Hash Generator</title>
+</head>
+<body>
+  <div class="non-footer">
+  <header class="navbar">
+    <div class="dropdown-nav"><img id="hamburger" style="margin-top: 14px;" src ="Images/menu-24px.svg">
+      <div class="dropdown-content">
+        <a href="https://string-util.netlify.app" target="_blank">String Utilities</a>
+        <a href="https://unit-converter-gvsn.netlify.app" target="_blank" >Unit Converter</a>
+        <a href="https://number-base-converet.netlify.app" target="_blank">Base Converter</a>
+        <a href="https://time-converter-gvsn.netlify.app/" target="_blank">Time Converter</a>
+        <a href="https://colou-util.netlify.app" target="_blank">Color Converter</a>
+          
+      </div>
+      </div>
+     <div class="dropdown-nav">Encoder/Decoder <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="dropdown-content">
+        <a href="./index.html">Base64 Encode</a>
+        <a href="./Base64Decode.html">Base64 Decode</a>
+        <a href="./URLEncodeDecode.html">URL Encode Decode</a>
+        <a href="./MD5HashGenerator.html">MD5 Hash Generator</a>
+        <a href="./SHA1HashGenerator.html">SHA-1 Hash Generator</a>
+        <a href="#">SHA-256 Hash Generator</a>
+        <a href="./SHA512HashGenerator.html">SHA-512 Hash Generator</a>
+      </div>
+      </div>
+      
+      <div class="util"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://util-app-dashboard.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+     
+  </header>
+  <main>
+    
+    <h2 style="text-align: center;">Use this generator to create an SHA-256 hash of a string:</h2>
+    <div class="input-output">
+      <div>
+        <textarea  type="text" id="input" placeholder="Enter input" rows="15" cols="60"></textarea>
+        </div>
+        <div style="margin-top:20px;margin-bottom:20px;">
+          <input type="button" id="generate-button" value= "Generate">
+          <input style="margin-left:20px;" type="button" id="reset-button" value= "Reset">
+          </div>
+        <div>
+        <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>  
+      </div>
+  </div>
+  </main>
+  <section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is a SHA-256 Hash?</h3>
+    <p>SHA-2 (Secure Hash Algorithm 2) is a set of cryptographic hash functions designed by the United States National Security Agency (NSA) and first published in 2001.[3][4] They are built using the Merkle–Damgård construction, from a one-way compression function itself built using the Davies–Meyer structure from a specialized block cipher.</p>
+     <p>SHA-2 includes significant changes from its predecessor, SHA-1. The SHA-2 family consists of six hash functions with digests (hash values) that are 224, 256, 384 or 512 bits: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256. SHA-256 and SHA-512 are novel hash functions computed with 32-bit and 64-bit words, respectively.</p>
+     <p>They use different shift amounts and additive constants, but their structures are otherwise virtually identical, differing only in the number of rounds. SHA-224 and SHA-384 are truncated versions of SHA-256 and SHA-512 respectively, computed with different initial values. SHA-512/224 and SHA-512/256 are also truncated versions of SHA-512, but the initial values are generated using the method described in Federal Information Processing Standards (FIPS) PUB 180-4.</p>
+     <p>You can check out more about it 
+       <a style="color:#388bfd;" href ="https://en.wikipedia.org/wiki/SHA-2" target="_blank">here.</a></p>
+      </div>     
+    </section>
+  
+  </div>
+ <div class="footer-wrapper">
+  <footer style="background-color:#24292e;">
+    <div class="footer-info" style="text-align: center;color:white;">
+      <p style="padding-top: 10px;">Check out my profiles here:</p>
+       <div class="footer-logo" >
+         <a href="https://www.linkedin.com/in/gvsn138/" target="_blank"><img src="Images/linkedin.svg"></a>
+         <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/gvsn138" target="_blank"><img src="Images/github.svg"></a>
+         <a href="https://twitter.com/gvsn138" target="_blank"><img src="Images/twitter.svg"></a>
+        </div>
+    </div>
+  </footer>
+ </div>
+
+  
+</body>
+</html>
